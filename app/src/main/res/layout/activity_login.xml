@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="127dp"
+        android:gravity="center"
+        android:text="Welcome Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="284dp"
+        android:layout_height="46dp"
+        android:text="You can search course apply course and find scholarship for abroad studies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_Welcome"></TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_google"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="287dp"
+        android:drawableStart="@drawable/ic_google"
+        android:elevation="22dp"
+        android:paddingLeft="20dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_fb"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/ic_google"
+        android:elevation="22dp"
+        android:paddingLeft="20dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    android:id="@+id/name_text_input"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="378dp"
+        android:gravity="center_vertical"
+        android:hint="@string/email_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldSenha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:hint="@string/senha_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEmail"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--<com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_input_senha"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textField"
+
+        />-->
+
+
+    <!--  <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="335dp"
+          android:layout_height="54dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="378dp"
+          android:gravity="center_vertical"
+          app:hintTextColor="@color/black"
+          app:defaultQueryHint="@string/email_hint"/>
+
+
+      <com.google.android.material.textfield.TextInputEditText
+
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="378dp"
+          android:gravity="center_vertical"
+          app:hintTextColor="@color/black"
+          app:defaultQueryHint="@string/email_hint">
+
+      </com.google.android.material.textfield.TextInputEditText>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+
+        android:layout_marginTop="536dp"
+        android:elevation="22dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_forgot"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="105dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:text="Forgot Password"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_no_account"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="105dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Don't have an account? Join us"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_forgot" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

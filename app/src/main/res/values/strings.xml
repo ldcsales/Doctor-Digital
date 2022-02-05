@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Doctor Digital</string>
+    <string name="email_hint">Email</string>
+    <string name="senha_hint">Senha</string>
 </resources>
