@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoctorDigital">
         <activity
+            android:name=".Profile_Screen"
+            android:exported="false"
+            android:label="@string/title_activity_profile_screen"
+            android:theme="@style/Theme.DoctorDigital.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
